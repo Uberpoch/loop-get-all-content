@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.0",
+    "command-line-args": "^5.2.0",
     "fs": "0.0.1-security",
     "fse": "^4.0.1",
     "node": "^15.2.1",
