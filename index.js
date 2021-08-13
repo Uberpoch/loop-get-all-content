@@ -46,7 +46,7 @@ const callLoop = async(token) => {
         let res = await call(token, url);
         totalPages = res.meta.total_pages;
         page++;
-        url = url + `?page=${page}`;
+        url = res.meta.next_page;
         console.log(`getting: page ${page} of ${totalPages}`);
         array = array.concat(res.data);
         console.log("array.length:", array.length);
